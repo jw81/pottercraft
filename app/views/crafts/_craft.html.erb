@@ -1,0 +1,16 @@
+<div id="<%= dom_id craft %>">
+  <p>
+    <strong>Name:</strong>
+    <%= craft.name %>
+  </p>
+
+  <p>
+    Posted <%= time_tag craft.created_at, "data-local": "time-ago" %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= craft.description %>
+  </p>
+
+</div>
