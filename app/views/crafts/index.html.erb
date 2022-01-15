@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Crafts</h1>
+
+<div id="crafts">
+  <% @crafts.each do |craft| %>
+    <%= render craft %>
+    <p>
+      <%= link_to "Show this craft", craft %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New craft", new_craft_path %>

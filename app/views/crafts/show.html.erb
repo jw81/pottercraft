@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @craft %>
+
+<div>
+  <%= link_to "Edit this craft", edit_craft_path(@craft) %> |
+  <%= link_to "Back to crafts", crafts_path %>
+
+  <%= button_to "Destroy this craft", @craft, method: :delete %>
+</div>
